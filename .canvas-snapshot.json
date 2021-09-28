@@ -1,0 +1,573 @@
+{
+  "quiz": {
+    "id": 18305,
+    "title": "Side Effects and Data Fetching Quiz",
+    "html_url": "https://learning.flatironschool.com/courses/3264/quizzes/18305",
+    "mobile_url": "https://learning.flatironschool.com/courses/3264/quizzes/18305?force_user=1&persist_headless=1",
+    "description": "<p><span>It's time to check your knowledge! Use this quiz to create a custom study guide. Note any answers that were marked incorrect, so you can study the relevant material and try this quiz again. </span></p>\n<p><span>If you don't know the answer to a question, please do not guess. Instead, select \"I don't know\". It's OK not to know everything and to admit when we're unsure.</span></p>",
+    "quiz_type": "assignment",
+    "time_limit": null,
+    "timer_autosubmit_disabled": false,
+    "shuffle_answers": true,
+    "show_correct_answers": true,
+    "scoring_policy": "keep_highest",
+    "allowed_attempts": 3,
+    "one_question_at_a_time": true,
+    "question_count": 9,
+    "points_possible": 9.0,
+    "cant_go_back": false,
+    "access_code": null,
+    "ip_filter": null,
+    "due_at": null,
+    "lock_at": null,
+    "unlock_at": null,
+    "published": false,
+    "unpublishable": true,
+    "locked_for_user": true,
+    "lock_info": {
+      "missing_permission": "participate_as_student",
+      "asset_string": "quizzes:quiz_18305"
+    },
+    "lock_explanation": "This quiz is currently locked.",
+    "hide_results": null,
+    "show_correct_answers_at": null,
+    "hide_correct_answers_at": null,
+    "all_dates": [
+      {
+        "due_at": null,
+        "unlock_at": null,
+        "lock_at": null,
+        "base": true
+      }
+    ],
+    "can_unpublish": true,
+    "can_update": true,
+    "require_lockdown_browser": false,
+    "require_lockdown_browser_for_results": false,
+    "require_lockdown_browser_monitor": false,
+    "lockdown_browser_monitor_data": null,
+    "speed_grader_url": null,
+    "permissions": {
+      "manage": true,
+      "read": true,
+      "create": true,
+      "update": true,
+      "submit": true,
+      "preview": true,
+      "delete": true,
+      "read_statistics": true,
+      "grade": true,
+      "review_grades": true,
+      "view_answer_audits": true
+    },
+    "quiz_reports_url": "https://learning.flatironschool.com/api/v1/courses/3264/quizzes/18305/reports",
+    "quiz_statistics_url": "https://learning.flatironschool.com/api/v1/courses/3264/quizzes/18305/statistics",
+    "message_students_url": "https://learning.flatironschool.com/api/v1/courses/3264/quizzes/18305/submission_users/message",
+    "section_count": 1,
+    "important_dates": false,
+    "quiz_submission_versions_html_url": "https://learning.flatironschool.com/courses/3264/quizzes/18305/submission_versions",
+    "assignment_id": 124634,
+    "one_time_results": false,
+    "only_visible_to_overrides": false,
+    "assignment_group_id": 6202,
+    "show_correct_answers_last_attempt": true,
+    "version_number": 3,
+    "has_access_code": false,
+    "post_to_sis": false,
+    "migration_id": null,
+    "question_types": [
+      "true_false_question",
+      "matching_question",
+      "multiple_choice_question",
+      "multiple_answers_question"
+    ]
+  },
+  "questions": [
+    {
+      "quiz_id": 18305,
+      "id": 123927,
+      "quiz_group_id": null,
+      "assessment_question_id": 128093,
+      "position": null,
+      "question_name": "By default, useEffect will run our side effect function every time the component re-renders.",
+      "question_type": "true_false_question",
+      "question_text": "<div>\n<div><span>By default, <code>useEffect</code> will run our side effect function every time the component re-renders.</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "True",
+          "weight": 100,
+          "id": 2404
+        },
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "False",
+          "weight": 0,
+          "id": 1251
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123928,
+      "quiz_group_id": null,
+      "assessment_question_id": 128097,
+      "position": null,
+      "question_name": "Each of the descriptions below applies to a particular React hook or function; choose the correct option for each from the dropdown.",
+      "question_type": "matching_question",
+      "question_text": "<p class=\"c-mrkdwn__pre\" data-stringify-type=\"pre\">Each of the descriptions below applies to a particular React hook or function; choose the correct option for each from the dropdown.</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 7875,
+          "text": "Is used to update the state of a component.",
+          "left": "Is used to update the state of a component.",
+          "right": "A setState function",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 335
+        },
+        {
+          "id": 419,
+          "text": "Allows us to run code that isn't triggered by a user event.",
+          "left": "Allows us to run code that isn't triggered by a user event.",
+          "right": "The useEffect hook",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 592
+        },
+        {
+          "id": 4644,
+          "text": "By default, is run automatically each time the component re-renders.",
+          "left": "By default, is run automatically each time the component re-renders.",
+          "right": "The useEffect hook",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 592
+        },
+        {
+          "id": 6523,
+          "text": "Causes a component to re-render when it's called.",
+          "left": "Causes a component to re-render when it's called.",
+          "right": "A setState function",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 335
+        },
+        {
+          "id": 4250,
+          "text": "Is used to set the initial state of a component.",
+          "left": "Is used to set the initial state of a component.",
+          "right": "The useState hook",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 3793
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": [
+        {
+          "text": "A setState function",
+          "match_id": 335
+        },
+        {
+          "text": "The useEffect hook",
+          "match_id": 592
+        },
+        {
+          "text": "The useState hook",
+          "match_id": 3793
+        }
+      ],
+      "matching_answer_incorrect_matches": ""
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123929,
+      "quiz_group_id": null,
+      "assessment_question_id": 128067,
+      "position": null,
+      "question_name": "Natasha is building a Twitter clone, and is trying to fetch some data from the Twitter API when her App component loads. What is the best approach to doing this?",
+      "question_type": "multiple_choice_question",
+      "question_text": "<div>\n<div><span>Natasha is building a Twitter clone, and is trying to fetch some data from the Twitter API when her App component loads. What is the best approach to doing this?</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 4414,
+          "text": "",
+          "html": "<p><span>Using the <code>useEffect</code> hook to fetch all the tweets she initially needs.</span></p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 6091,
+          "text": "",
+          "html": "<div>\n<div><span>Making the user click a button and handling the fetch request in the click event handler.</span></div>\n</div>",
+          "comments": "",
+          "comments_html": "<p><span>By default,&nbsp;</span><code>useEffect</code><span>&nbsp;will run our side effect function every time the component re-renders.</span></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 9642,
+          "text": "",
+          "html": "<p>Making the fetch request directly in the body of the component function.</p>",
+          "comments": "",
+          "comments_html": "<p><span>By default,&nbsp;</span><code>useEffect</code><span>&nbsp;will run our side effect function every time the component re-renders.</span></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 2484,
+          "text": "I don't know.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123930,
+      "quiz_group_id": null,
+      "assessment_question_id": 128094,
+      "position": null,
+      "question_name": "Natasha now wants to add CRUD to her users profiles, should she put this PATCH request in a useEffect hook or attach it to an event listener?",
+      "question_type": "multiple_choice_question",
+      "question_text": "<div>\n<div><span>Natasha now wants to add CRUD to her users profiles in her Twitter clone, should she put this PATCH request in a <code>useEffect</code> hook or attach it to an event listener?</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 1642,
+          "text": "Event listener, because she only wants the fetch to fire when the user is done updating their profile.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 8714,
+          "text": "useEffect, because she needs the data immediately when the page loads.",
+          "html": "",
+          "comments": "",
+          "comments_html": "<p>Because she is making a Patch request to update her user's profile, it would make more sense to make this request when the user is done updating.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": 8950,
+          "text": "I don't know.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123931,
+      "quiz_group_id": null,
+      "assessment_question_id": 128090,
+      "position": null,
+      "question_name": "React gives us a way to control when the side effect will run. What is it?",
+      "question_type": "multiple_choice_question",
+      "question_text": "<div>\n<div><span>React gives us a way to control when the side effect will run. What is it?</span></div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": 1389,
+          "text": "",
+          "html": "<p>By passing a second argument to <code>useEffect</code> of a dependencies array.</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": 7239,
+          "text": "",
+          "html": "<p>By running a cleanup function in a <code>useEffect</code> callback function.</p>",
+          "comments": "",
+          "comments_html": "<p><span>Cleanup functions are useful if you have a long-running function that you want to unsubscribe from when the component is no longer on the page.</span></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 6489,
+          "text": "",
+          "html": "<p>By calling the <code>useEffect</code> inside an if/else statement.</p>",
+          "comments": "",
+          "comments_html": "<p><span>As with all hooks, always use <code>useEffect</code> at the top level of your React function, before any early returns. </span></p>\n<p>&nbsp;</p>\n<p><span>Check out the <a class=\"inline_disabled\" href=\"https://reactjs.org/docs/hooks-rules.html\" target=\"_blank\">React docs</a> for more information on this.</span></p>",
+          "weight": 0.0
+        },
+        {
+          "id": 98,
+          "text": "I don't know.",
+          "html": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123932,
+      "quiz_group_id": null,
+      "assessment_question_id": 128095,
+      "position": null,
+      "question_name": "This code will successfully update the state after receiving the response from our request.",
+      "question_type": "true_false_question",
+      "question_text": "<p>This code will successfully update our component's state after receiving the response from our request.</p>\n<pre><code>\nuseEffect(() =&gt; {\n  fetch(\"https://api.twitter.com/1.1/search/tweets.json\")\n    .then((r) =&gt; r.json())\n    .then((data) =&gt; {\n      setTweets(data.tweets);\n    });\n}, []);\n  </code></pre>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "comments": "",
+          "comments_html": "",
+          "text": "True",
+          "weight": 100,
+          "id": 9408
+        },
+        {
+          "comments": "",
+          "comments_html": "<p><span>By default,&nbsp;</span><code>useEffect</code><span>&nbsp;will run our side effect function every time the component re-renders.</span></p>",
+          "text": "False",
+          "weight": 0,
+          "id": 5442
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123933,
+      "quiz_group_id": null,
+      "assessment_question_id": 128089,
+      "position": null,
+      "question_name": "What will happen when the following code runs?",
+      "question_type": "multiple_answers_question",
+      "question_text": "<div>\n<div><span>What will happen when the following code runs?</span></div>\n<div>\n<div>\n<pre><span>useEffect(() =&gt; {</span><br><span>  fetch(\"https://dog.ceo/api/breeds/image/random/3\")</span><br><span>  .then((r) =&gt; r.json())</span><br><span>  .then((data) =&gt; {</span><br><span>    // setting state in the useEffect callback</span><br><span>    setImages(data.messages);</span><br><span>  });</span><br><span>});</span></pre>\n</div>\n</div>\n</div>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "1666",
+          "text": "Running this code will result in an endless loop of fetch requests.",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "7421",
+          "text": "",
+          "comments": "",
+          "comments_html": "<p><span>We don't want to make a network request every time our component is updated, only the first time our component renders. To control our side effects, React gives us the option of passing a second argument to&nbsp;</span><code>useEffect</code><span>&nbsp;of a&nbsp;</span><strong>dependencies array</strong><span>.</span></p>",
+          "weight": 0.0,
+          "html": "<p>Our component will re-render once after calling <code>setImages</code> and the <code>useEffect</code> callback won't run again.</p>"
+        },
+        {
+          "id": "449",
+          "text": "I don't know.",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123934,
+      "quiz_group_id": null,
+      "assessment_question_id": 128092,
+      "position": null,
+      "question_name": "When and why should we use a cleanup function as a useEffect's callback?",
+      "question_type": "multiple_answers_question",
+      "question_text": "<p>When and why should we use a cleanup function as a useEffect's callback?</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "9234",
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "html": "<p>If we have a long running function that we want to stop running when our component is no longer the page.</p>"
+        },
+        {
+          "id": "8544",
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "html": "<p>So we don't have unnecessary code running in the background when we no longer need it.</p>"
+        },
+        {
+          "id": "5422",
+          "text": "Always just to be safe.",
+          "comments": "",
+          "comments_html": "<p>Cleanup functions are useful if you have a long-running function that you want to unsubscribe from when the component is no longer on the page. Common examples include:</p>\n<ul>\n<li>a timer running via<span>&nbsp;</span><code>setInterval</code></li>\n<li>a subscription to a web socket connection</li>\n</ul>\n<p>You don't always have to use a cleanup function as part of your<span>&nbsp;</span><code>useEffect</code><span>&nbsp;</span>code, but it's good to know what scenarios make this functionality useful.</p>",
+          "weight": 0.0
+        },
+        {
+          "id": "3176",
+          "text": "I don't know.",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    },
+    {
+      "quiz_id": 18305,
+      "id": 123935,
+      "quiz_group_id": null,
+      "assessment_question_id": 128088,
+      "position": null,
+      "question_name": "Which of the following would be good use-cases for the useEffect hook?",
+      "question_type": "multiple_answers_question",
+      "question_text": "<p>Which of the following would be good use-cases for the <code>useEffect</code> hook?</p>",
+      "points_possible": 1.0,
+      "correct_comments": "",
+      "incorrect_comments": "",
+      "neutral_comments": "",
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
+      "neutral_comments_html": "",
+      "answers": [
+        {
+          "id": "5178",
+          "text": "Fetch some data from an API when a component loads",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "9653",
+          "text": "Start or stop a timer",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "2549",
+          "text": "Manually change the DOM",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "6325",
+          "text": "Subscribe to a chat service",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0
+        },
+        {
+          "id": "9557",
+          "text": "I don't know.",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
+        }
+      ],
+      "variables": null,
+      "formulas": null,
+      "answer_tolerance": null,
+      "formula_decimal_places": null,
+      "matches": null,
+      "matching_answer_incorrect_matches": null
+    }
+  ]
+}
