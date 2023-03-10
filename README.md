@@ -1,6 +1,6 @@
 ---
-id: 18305
-course_id: 3264
+id: 43046
+course_id: 6667
 repo: phase-2-quiz-side-effects-and-data-fetching
 ---
 
