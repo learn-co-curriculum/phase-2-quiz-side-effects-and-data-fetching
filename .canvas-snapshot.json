@@ -85,34 +85,32 @@
       "id": 366290,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 1,
+      "assessment_question_id": 632150,
+      "position": null,
       "question_name": "useEffect",
       "question_type": "true_false_question",
-      "question_text": "When called with only one argument, <code>useEffect</code> will run our side effect\nfunction every time the component renders.",
+      "question_text": "<p>When called with only one argument, <code>useEffect</code> will run our side effect\nfunction every time the component renders.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:The useEffect Hook",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/the-useeffect-hook\">The useEffect Hook</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_3997",
-          "id": 3997,
+          "comments": "",
+          "comments_html": "<p>Right! When we call the <code>useEffect</code> hook and don't provide a dependencies array,\nit will run the side effect function on every render. For example, the side\neffect function in this <code>useEffect</code> call would run on every render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"nx\">useEffect</span><span class=\"p\">(()</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">render</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">});</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>hello!h1&gt;;\n}\n</code></pre></div>",
           "text": "True",
-          "comments": "Right! When we call the useEffect hook and don't provide a dependencies array, it will run the side effect function on every render. For example, the side effect function in this useEffect call would run on every render: function App() { useEffect(() = { console.log(\"render\"); }); return h1hello!h1; }",
-          "comments_html": "<p>Right! When we call the <code>useEffect</code> hook and don't provide a dependencies array,\nit will run the side effect function on every render. For example, the side\neffect function in this <code>useEffect</code> call would run on every render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"nx\">useEffect</span><span class=\"p\">(()</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">render</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">});</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>hello!h1&gt;;\n}\n</code></pre></div>"
+          "weight": 100,
+          "id": 3997
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_7223",
-          "id": 7223,
+          "comments": "",
+          "comments_html": "<p>When we call the <code>useEffect</code> hook and don't provide a dependencies array, it\nwill run the side effect function on every render. For example, the side effect\nfunction in this <code>useEffect</code> call would run on every render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"nx\">useEffect</span><span class=\"p\">(()</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">render</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">});</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>hello!h1&gt;;\n}\n</code></pre></div>",
           "text": "False",
-          "comments": "When we call the useEffect hook and don't provide a dependencies array, it will run the side effect function on every render. For example, the side effect function in this useEffect call would run on every render: function App() { useEffect(() = { console.log(\"render\"); }); return h1hello!h1; }",
-          "comments_html": "<p>When we call the <code>useEffect</code> hook and don't provide a dependencies array, it\nwill run the side effect function on every render. For example, the side effect\nfunction in this <code>useEffect</code> call would run on every render:</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">App</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"nx\">useEffect</span><span class=\"p\">(()</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n    <span class=\"nx\">console</span><span class=\"p\">.</span><span class=\"nx\">log</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">render</span><span class=\"dl\">\"</span><span class=\"p\">);</span>\n  <span class=\"p\">});</span>\n\n  <span class=\"k\">return</span> <span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>hello!h1&gt;;\n}\n</code></pre></div>"
+          "weight": 0,
+          "id": 7223
         }
       ],
       "variables": null,
@@ -126,53 +124,63 @@
       "id": 366291,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 2,
+      "assessment_question_id": 632148,
+      "position": null,
       "question_name": "React Hooks",
       "question_type": "matching_question",
-      "question_text": "Each of the descriptions below applies to a particular React hook or function.\nChoose the correct option for each from the dropdown.",
+      "question_text": "<p>Each of the descriptions below applies to a particular React hook or function.\nChoose the correct option for each from the dropdown.</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:The useEffect HookReact State",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/the-useeffect-hook\">The useEffect Hook</a></li><li><a href=\"/courses/7553/pages/react-state\">React State</a></li></ul><p></p>",
       "answers": [
         {
+          "id": "1787",
           "text": "Is used to update the state of a component.",
-          "id": 1787,
-          "match_id": 9242,
           "left": "Is used to update the state of a component.",
-          "right": "A setState function"
+          "right": "A setState function",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 2213
         },
         {
+          "id": "4470",
           "text": "Allows us to run code that isn't triggered by a user event.",
-          "id": 4470,
-          "match_id": 8870,
           "left": "Allows us to run code that isn't triggered by a user event.",
-          "right": "The useEffect hook"
+          "right": "The useEffect hook",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 8521
         },
         {
+          "id": "6338",
           "text": "By default, is run automatically each time the component re-renders.",
-          "id": 6338,
-          "match_id": 8870,
           "left": "By default, is run automatically each time the component re-renders.",
-          "right": "The useEffect hook"
+          "right": "The useEffect hook",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 8521
         },
         {
+          "id": "4954",
           "text": "Causes a component to re-render when called.",
-          "id": 4954,
-          "match_id": 9242,
           "left": "Causes a component to re-render when called.",
-          "right": "A setState function"
+          "right": "A setState function",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 2213
         },
         {
+          "id": "6411",
           "text": "Is used to set the initial state of a component.",
-          "id": 6411,
-          "match_id": 3707,
           "left": "Is used to set the initial state of a component.",
-          "right": "The useState hook"
+          "right": "The useState hook",
+          "comments": "",
+          "comments_html": "",
+          "match_id": 8195
         }
       ],
       "variables": null,
@@ -181,70 +189,68 @@
       "formula_decimal_places": null,
       "matches": [
         {
-          "match_id": 9242,
-          "text": "A setState function"
+          "text": "A setState function",
+          "match_id": 2213
         },
         {
-          "match_id": 8870,
-          "text": "The useEffect hook"
+          "text": "The useEffect hook",
+          "match_id": 8521
         },
         {
-          "match_id": 3707,
-          "text": "The useState hook"
+          "text": "The useState hook",
+          "match_id": 8195
         }
       ],
-      "matching_answer_incorrect_matches": null
+      "matching_answer_incorrect_matches": ""
     },
     {
       "id": 366292,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 3,
+      "assessment_question_id": 632153,
+      "position": null,
       "question_name": "Data Fetching",
       "question_type": "multiple_choice_question",
-      "question_text": "Natasha is building a Twitter clone, and is trying to fetch some data from the\nTwitter API when her App component loads. What is the best approach to doing\nthis?",
+      "question_text": "<p>Natasha is building a Twitter clone, and is trying to fetch some data from the\nTwitter API when her App component loads. What is the best approach to doing\nthis?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:Data Fetching in React",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/data-fetching-in-react\">Data Fetching in React</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_6825",
-          "id": 6825,
-          "text": "Using the useEffect hook to fetch all the tweets she initially needs.",
-          "html": "Using the <code>useEffect</code> hook to fetch all the tweets she initially needs.",
-          "comments": "Correct! The useEffect hook is a great tool for this feature, since we can use the useEffect hook to fetch data only when the component first loads.",
-          "comments_html": "Correct! The <code>useEffect</code> hook is a great tool for this feature, since we can use\nthe <code>useEffect</code> hook to fetch data only when the component first loads."
+          "id": 4665,
+          "text": "",
+          "html": "<p>Using the <code>useEffect</code> hook to fetch all the tweets she initially needs.</p>",
+          "comments": "",
+          "comments_html": "<p>Correct! The <code>useEffect</code> hook is a great tool for this feature, since we can use\nthe <code>useEffect</code> hook to fetch data only when the component first loads.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_4683",
-          "id": 4683,
-          "text": "Making the user click a button and handling the fetch request in the click event handler.",
-          "html": "Making the user click a button and handling the fetch request in the click event\nhandler.",
-          "comments": "Not quite. Since Natasha wants to fetch data when her component loads, she shouldn't need to set up a click event handler. The useEffect hook is a better tool for this feature, since we can use the useEffect hook to fetch data only when the component first loads.",
-          "comments_html": "Not quite. Since Natasha wants to fetch data when her component loads, she\nshouldn't need to set up a click event handler. The <code>useEffect</code> hook is a better\ntool for this feature, since we can use the <code>useEffect</code> hook to fetch data only\nwhen the component first loads."
+          "id": 176,
+          "text": "",
+          "html": "<p>Making the user click a button and handling the fetch request in the click event\nhandler.</p>",
+          "comments": "",
+          "comments_html": "<p>Not quite. Since Natasha wants to fetch data when her component loads, she\nshouldn't need to set up a click event handler. The <code>useEffect</code> hook is a better\ntool for this feature, since we can use the <code>useEffect</code> hook to fetch data only\nwhen the component first loads.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_8942",
-          "id": 8942,
-          "text": "Making the fetch request directly in the body of the component function.",
-          "comments": "Unfortunately this won't work! Since the body of the component function runs every time the component renders, Natasha would likely end up with an infinite loop of fetching data/setting state/re-rendering the component. TheuseEffect hook is a better tool for this feature, since we can use theuseEffect hook to fetch data only when the component first loads.",
-          "comments_html": "Unfortunately this won't work! Since the body of the component function runs\nevery time the component renders, Natasha would likely end up with an infinite\nloop of fetching data/setting state/re-rendering the component. The<code>useEffect</code>\nhook is a better tool for this feature, since we can use the<code>useEffect</code> hook to\nfetch data only when the component first loads."
+          "id": 7849,
+          "text": "",
+          "html": "<p>Making the fetch request directly in the body of the component function.</p>",
+          "comments": "",
+          "comments_html": "<p>Unfortunately this won't work! Since the body of the component function runs\nevery time the component renders, Natasha would likely end up with an infinite\nloop of fetching data/setting state/re-rendering the component.\nThe<code>useEffect</code>hook is a better tool for this feature, since we can use\nthe<code>useEffect</code> hook to fetch data only when the component first loads.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_4933",
-          "id": 4933,
-          "text": "I don't know.",
-          "html": "I don't know.",
-          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+          "id": 9675,
+          "text": "",
+          "html": "<p>I don't know.</p>",
+          "comments": "",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -258,8 +264,8 @@
       "id": 366293,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 4,
+      "assessment_question_id": 632149,
+      "position": null,
       "question_name": "Data Fetching",
       "question_type": "multiple_choice_question",
       "question_text": "<p>Natasha now wants her users to be able to update their profiles in her Twitter\nclone. A user should be able to update their profile by filling out and\nsubmitting a form. She'll then need to take the data from the form and send it\nto her backend by making a <code>PATCH</code> request.</p>\n\n<p>Should she handle this action with the <code>useEffect</code> hook, or by attaching an\nevent listener?</p>",
@@ -267,34 +273,33 @@
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:Data Fetching in React",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/data-fetching-in-react\">Data Fetching in React</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_5133",
-          "id": 5133,
-          "text": "Event listener , because she only wants the fetch to fire when the user is done updating their profile.",
-          "html": "<strong>Event listener</strong> , because she only wants the fetch to fire when the user is done updating their profile.",
-          "comments": "Correct! The useEffect hook is only helpful for running code as a side-effect of the component rendering. In the case of this feature, Natasha doesn't need to wait for the component to re-render in order to run the code to make the PATCH request, so using useEffect is not necessary. She can simply make the request when the submit event is triggered for the form.",
-          "comments_html": "Correct! The <code>useEffect</code> hook is only helpful for running code as a side-effect\nof the component rendering. In the case of this feature, Natasha doesn't need to\nwait for the component to re-render in order to run the code to make the <code>PATCH</code>\nrequest, so using <code>useEffect</code> is not necessary. She can simply make the request\nwhen the <code>submit</code> event is triggered for the form."
+          "id": 3811,
+          "text": "",
+          "html": "<p><strong>Event listener</strong> , because she only wants the fetch to fire when the user is done updating their profile.</p>",
+          "comments": "",
+          "comments_html": "<p>Correct! The <code>useEffect</code> hook is only helpful for running code as a side-effect\nof the component rendering. In the case of this feature, Natasha doesn't need to\nwait for the component to re-render in order to run the code to make the\n<code>PATCH</code>request, so using <code>useEffect</code> is not necessary. She can simply make the\nrequest when the <code>submit</code> event is triggered for the form.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_6144",
-          "id": 6144,
-          "text": "useEffect, because she needs the data immediately when the page loads.",
-          "html": "<code>useEffect</code>, because she needs the data immediately when the page loads.",
-          "comments": "The useEffect hook is helpful for running code as a side-effect of the component rendering. In the case of this feature, Natasha doesn't need to wait for the component to re-render in order to run the code to make the PATCHrequest. She can simply make the request when the submit event is triggered for the form.",
-          "comments_html": "The <code>useEffect</code> hook is helpful for running code as a side-effect of the\ncomponent rendering. In the case of this feature, Natasha doesn't need to wait\nfor the component to re-render in order to run the code to make the\n<code>PATCH</code>request. She can simply make the request when the <code>submit</code> event is\ntriggered for the form."
+          "id": 2981,
+          "text": "",
+          "html": "<p><code>useEffect</code>, because she needs the data immediately when the page loads.</p>",
+          "comments": "",
+          "comments_html": "<p>The <code>useEffect</code> hook is helpful for running code as a side-effect of the\ncomponent rendering. In the case of this feature, Natasha doesn't need to wait\nfor the component to re-render in order to run the code to make\nthe<code>PATCH</code>request. She can simply make the request when the <code>submit</code> event is\ntriggered for the form.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_4632",
-          "id": 4632,
-          "text": "I don't know.",
-          "html": "I don't know."
+          "id": 1832,
+          "text": "",
+          "html": "<p>I don't know.</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -308,52 +313,50 @@
       "id": 366294,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 5,
+      "assessment_question_id": 632147,
+      "position": null,
       "question_name": "useEffect",
       "question_type": "multiple_choice_question",
-      "question_text": "When we're using the <code>useEffect</code> hook, React gives us a way to control when the\nside effect function will run. What is it?",
+      "question_text": "<p>When we're using the <code>useEffect</code> hook, React gives us a way to control when the\nside effect function will run. What is it?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:The useEffect Hook",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/the-useeffect-hook\">The useEffect Hook</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_2243",
-          "id": 2243,
-          "text": "By passing a second argument to useEffect of a dependencies array.",
-          "html": "By passing a second argument to <code>useEffect</code> of a dependencies array.",
-          "comments": "Correct! By passing a dependencies array to the useEffect hook, React can determine whether or not it is necessary to call the side effect function based on whether the variables in that dependencies array have changed from one render to the next.",
-          "comments_html": "Correct! By passing a dependencies array to the <code>useEffect</code> hook, React can\ndetermine whether or not it is necessary to call the side effect function based\non whether the variables in that dependencies array have changed from one render\nto the next."
+          "id": 1845,
+          "text": "",
+          "html": "<p>By passing a second argument to <code>useEffect</code> of a dependencies array.</p>",
+          "comments": "",
+          "comments_html": "<p>Correct! By passing a dependencies array to the <code>useEffect</code> hook, React can\ndetermine whether or not it is necessary to call the side effect function based\non whether the variables in that dependencies array have changed from one render\nto the next.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_2698",
-          "id": 2698,
-          "text": "By running a cleanup function in a useEffect callback function.",
-          "html": "By running a cleanup function in a <code>useEffect</code> callback function.",
-          "comments": "Cleanup functions are useful if you have a long-running function that you want to unsubscribe from when the component is no longer on the page. The side effect function will always run before the cleanup function, so the cleanup function doesn't control when the side effect function will run.",
-          "comments_html": "Cleanup functions are useful if you have a long-running function that you want\nto unsubscribe from when the component is no longer on the page. The side effect\nfunction will always run before the cleanup function, so the cleanup function\ndoesn't control when the side effect function will run."
+          "id": 5692,
+          "text": "",
+          "html": "<p>By running a cleanup function in a <code>useEffect</code> callback function.</p>",
+          "comments": "",
+          "comments_html": "<p>Cleanup functions are useful if you have a long-running function that you want\nto unsubscribe from when the component is no longer on the page. The side effect\nfunction will always run before the cleanup function, so the cleanup function\ndoesn't control when the side effect function will run.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_2794",
-          "id": 2794,
-          "text": "By calling the useEffect inside an if/else statement.",
-          "html": "By calling the <code>useEffect</code> inside an if/else statement.",
-          "comments": "Be careful here! As with all hooks, always use useEffect at the top level of your React function. Hooks should never be called conditionally. Check out theReact docs for more information on this.",
-          "comments_html": "Be careful here! As with all hooks, always use <code>useEffect</code> at the top level of\nyour React function. Hooks should never be called conditionally. Check out\nthe<a href=\"https://reactjs.org/docs/hooks-rules.html\">React docs</a> for more information\non this."
+          "id": 1292,
+          "text": "",
+          "html": "<p>By calling the <code>useEffect</code> inside an if/else statement.</p>",
+          "comments": "",
+          "comments_html": "<p>Be careful here! As with all hooks, always use <code>useEffect</code> at the top level of\nyour React function. Hooks should never be called conditionally. Check out\nthe<a href=\"https://reactjs.org/docs/hooks-rules.html\">React docs</a> for more information\non this.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_9360",
-          "id": 9360,
-          "text": "I don't know.",
-          "html": "I don't know."
+          "id": 365,
+          "text": "",
+          "html": "<p>I don't know.</p>",
+          "comments": "",
+          "comments_html": "",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -367,8 +370,8 @@
       "id": 366295,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 6,
+      "assessment_question_id": 632154,
+      "position": null,
       "question_name": "useEffect",
       "question_type": "true_false_question",
       "question_text": "<p>This code will successfully update our component's state after receiving the\nresponse from our request.</p>\n<div class=\"highlight\"><pre class=\"highlight javascript\"><code><span class=\"kd\">function</span> <span class=\"nx\">TweetList</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">tweets</span><span class=\"p\">,</span> <span class=\"nx\">setTweets</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"nx\">useEffect</span><span class=\"p\">(()</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n    <span class=\"nx\">fetch</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">https://api.twitter.com/1.1/search/tweets.json</span><span class=\"dl\">\"</span><span class=\"p\">)</span>\n      <span class=\"p\">.</span><span class=\"nx\">then</span><span class=\"p\">((</span><span class=\"nx\">r</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">r</span><span class=\"p\">.</span><span class=\"nx\">json</span><span class=\"p\">())</span>\n      <span class=\"p\">.</span><span class=\"nx\">then</span><span class=\"p\">((</span><span class=\"nx\">data</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n        <span class=\"nx\">setTweets</span><span class=\"p\">(</span><span class=\"nx\">data</span><span class=\"p\">.</span><span class=\"nx\">tweets</span><span class=\"p\">);</span>\n      <span class=\"p\">});</span>\n  <span class=\"p\">},</span> <span class=\"p\">[]);</span>\n\n  <span class=\"c1\">// return JSX...</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
@@ -376,25 +379,23 @@
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:Data Fetching in React",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/data-fetching-in-react\">Data Fetching in React</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_9500",
-          "id": 9500,
+          "comments": "",
+          "comments_html": "<p>Correct! This is a common approach to fetching data from an API and setting that\ndata in state when a component loads. Check out the<a href=\"https://reactjs.org/docs/faq-ajax.html\">React AJAX\nexample</a> for more on this pattern.</p>",
           "text": "True",
-          "comments": "Correct! This is a common approach to fetching data from an API and setting that data in state when a component loads. Check out theReact AJAX example for more on this pattern.",
-          "comments_html": "Correct! This is a common approach to fetching data from an API and setting that\ndata in state when a component loads. Check out the<a href=\"https://reactjs.org/docs/faq-ajax.html\">React AJAX\nexample</a> for more on this pattern."
+          "weight": 100,
+          "id": 9500
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5431",
-          "id": 5431,
+          "comments": "",
+          "comments_html": "<p>This code will update our component's state correctly. This is a common approach\nto fetching data from an API and setting that data in state when a component\nloads. Check out the<a href=\"https://reactjs.org/docs/faq-ajax.html\">React AJAX\nexample</a>for more on this pattern.</p>",
           "text": "False",
-          "comments": "This code will update our component's state correctly. This is a common approach to fetching data from an API and setting that data in state when a component loads. Check out theReact AJAX example for more on this pattern.",
-          "comments_html": "This code will update our component's state correctly. This is a common approach\nto fetching data from an API and setting that data in state when a component\nloads. Check out the<a href=\"https://reactjs.org/docs/faq-ajax.html\">React AJAX example</a>\nfor more on this pattern."
+          "weight": 0,
+          "id": 5431
         }
       ],
       "variables": null,
@@ -408,8 +409,8 @@
       "id": 366296,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 7,
+      "assessment_question_id": 632151,
+      "position": null,
       "question_name": "What will happen when the following code runs?",
       "question_type": "multiple_answers_question",
       "question_text": "<p>What will happen when the following code runs?</p>\n<div class=\"highlight\"><pre class=\"highlight jsx\"><code><span class=\"kd\">function</span> <span class=\"nx\">DogImages</span><span class=\"p\">()</span> <span class=\"p\">{</span>\n  <span class=\"kd\">const</span> <span class=\"p\">[</span><span class=\"nx\">dogImages</span><span class=\"p\">,</span> <span class=\"nx\">setDogImages</span><span class=\"p\">]</span> <span class=\"o\">=</span> <span class=\"nx\">useState</span><span class=\"p\">([]);</span>\n\n  <span class=\"nx\">useEffect</span><span class=\"p\">(()</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n    <span class=\"nx\">fetch</span><span class=\"p\">(</span><span class=\"dl\">\"</span><span class=\"s2\">https://dog.ceo/api/breeds/image/random/3</span><span class=\"dl\">\"</span><span class=\"p\">)</span>\n      <span class=\"p\">.</span><span class=\"nx\">then</span><span class=\"p\">((</span><span class=\"nx\">r</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"nx\">r</span><span class=\"p\">.</span><span class=\"nx\">json</span><span class=\"p\">())</span>\n      <span class=\"p\">.</span><span class=\"nx\">then</span><span class=\"p\">((</span><span class=\"nx\">data</span><span class=\"p\">)</span> <span class=\"o\">=&gt;</span> <span class=\"p\">{</span>\n        <span class=\"c1\">// setting state in the useEffect callback</span>\n        <span class=\"nx\">setDogImages</span><span class=\"p\">(</span><span class=\"nx\">data</span><span class=\"p\">.</span><span class=\"nx\">messages</span><span class=\"p\">);</span>\n      <span class=\"p\">});</span>\n  <span class=\"p\">});</span>\n\n  <span class=\"c1\">// return JSX...</span>\n<span class=\"p\">}</span>\n</code></pre></div>",
@@ -417,34 +418,33 @@
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:Data Fetching in React",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/data-fetching-in-react\">Data Fetching in React</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_848",
-          "id": 848,
-          "text": "Running this code will result in an endless loop of fetch requests.",
-          "comments": "Right! By default, the useEffect hook will run our side effect after every render, unless we provide a dependencies array as a second argument. Since calling setDogImages will trigger a re-render of our component, this will result in an endless loop of fetching and setting state.",
-          "comments_html": "Right! By default, the <code>useEffect</code> hook will run our side effect after every\nrender, unless we provide a dependencies array as a second argument. Since\ncalling <code>setDogImages</code> will trigger a re-render of our component, this will\nresult in an endless loop of fetching and setting state."
+          "id": 9992,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Right! By default, the <code>useEffect</code> hook will run our side effect after every\nrender, unless we provide a dependencies array as a second argument. Since\ncalling <code>setDogImages</code> will trigger a re-render of our component, this will\nresult in an endless loop of fetching and setting state.</p>",
+          "weight": 100.0,
+          "html": "<p>Running this code will result in an endless loop of fetch requests.</p>"
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_4020",
-          "id": 4020,
-          "text": "Our component will re-render once after calling setDogImages and the useEffectcallback won't run again.",
-          "html": "Our component will re-render once after calling <code>setDogImages</code> and the\n<code>useEffect</code>callback won't run again.",
-          "comments": "We don't want to make a network request every time our component is updated, only the first time our component renders. To control our side effects, React gives us the option of passing a second argument to useEffect of a dependencies array. By default, the useEffect hook will run our side effect after every render, unless we provide a dependencies array as a second argument. Since calling setDogImages will trigger a re-render of our component, this will result in an endless loop of fetching and setting state.",
-          "comments_html": "We don't want to make a network request every time our component is updated,\nonly the first time our component renders. To control our side effects, React\ngives us the option of passing a second argument to <code>useEffect</code> of\na <strong>dependencies array</strong>. By default, the <code>useEffect</code> hook will run our side\neffect after every render, unless we provide a dependencies array as a second\nargument. Since calling <code>setDogImages</code> will trigger a re-render of our\ncomponent, this will result in an endless loop of fetching and setting state."
+          "id": 5757,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>We don't want to make a network request every time our component is updated,\nonly the first time our component renders. To control our side effects, React\ngives us the option of passing a second argument to <code>useEffect</code> of a\n<strong>dependencies array</strong>. By default, the <code>useEffect</code> hook will run our side\neffect after every render, unless we provide a dependencies array as a second\nargument. Since calling <code>setDogImages</code> will trigger a re-render of our\ncomponent, this will result in an endless loop of fetching and setting state.</p>",
+          "weight": 0.0,
+          "html": "<p>Our component will re-render once after calling <code>setDogImages</code> and\nthe<code>useEffect</code>callback won't run again.</p>"
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_8192",
-          "id": 8192,
-          "text": "I don't know.",
-          "html": "I don't know.",
-          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+          "id": 5973,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
+          "weight": 0.0,
+          "html": "<p>I don't know.</p>"
         }
       ],
       "variables": null,
@@ -458,52 +458,50 @@
       "id": 366297,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 8,
+      "assessment_question_id": 632152,
+      "position": null,
       "question_name": "useEffect",
       "question_type": "multiple_choice_question",
-      "question_text": "When and why should we use a cleanup function with <code>useEffect</code>?",
+      "question_text": "<p>When and why should we use a cleanup function with <code>useEffect</code>?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:The useEffect Hook - Cleaning Up",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/the-useeffect-hook-cleaning-up\">The useEffect Hook - Cleaning Up</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_4120",
-          "id": 4120,
-          "text": "If we have a long running function that we want to stop running when our component is no longer the page.",
-          "html": "If we have a long running function that we want to stop running when our\ncomponent is no longer the page.",
-          "comments": "Spot on! The reason React provides us with the ability to clean up after our side effect functions is to avoid memory leaks, and prevent unneeded code from running in the background.",
-          "comments_html": "Spot on! The reason React provides us with the ability to clean up after our\nside effect functions is to avoid memory leaks, and prevent unneeded code from\nrunning in the background."
+          "id": 4592,
+          "text": "",
+          "html": "<p>If we have a long running function that we want to stop running when our\ncomponent is no longer the page.</p>",
+          "comments": "",
+          "comments_html": "<p>Spot on! The reason React provides us with the ability to clean up after our\nside effect functions is to avoid memory leaks, and prevent unneeded code from\nrunning in the background.</p>",
+          "weight": 100.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_6599",
-          "id": 6599,
-          "text": "Any time we make a network request with fetch.",
-          "html": "Any time we make a network request with <code>fetch</code>.",
-          "comments": "While it can be helpful on occasion to use a cleanup function with network requests (for example, to cancel a request if the component is removed from the page before the request completes), it's not necessary to do so for every network request.",
-          "comments_html": "While it can be helpful on occasion to use a cleanup function with network\nrequests (for example, to cancel a request if the component is removed from the\npage before the request completes), it's not necessary to do so for every\nnetwork request."
+          "id": 3107,
+          "text": "",
+          "html": "<p>Any time we make a network request with <code>fetch</code>.</p>",
+          "comments": "",
+          "comments_html": "<p>While it can be helpful on occasion to use a cleanup function with network\nrequests (for example, to cancel a request if the component is removed from the\npage before the request completes), it's not necessary to do so for every\nnetwork request.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_6822",
-          "id": 6822,
-          "text": "Always, just to be safe.",
-          "comments": "Cleanup functions are useful if you have a long-running function that you want to unsubscribe from when the component is no longer on the page. Common examples include:  a timer running via setInterval a subscription to a web socket connection  You don't always have to use a cleanup function as part of your useEffectcode, but it's good to know what scenarios make this functionality useful.",
-          "comments_html": "<p>Cleanup functions are useful if you have a long-running function that you want\nto unsubscribe from when the component is no longer on the page. Common examples\ninclude:</p>\n\n<ul>\n<li>a timer running via <code>setInterval</code></li>\n<li>a subscription to a web socket connection</li>\n</ul>\n\n<p>You don't always have to use a cleanup function as part of your <code>useEffect</code>code,\nbut it's good to know what scenarios make this functionality useful.</p>"
+          "id": 3777,
+          "text": "",
+          "html": "<p>Always, just to be safe.</p>",
+          "comments": "",
+          "comments_html": "<p>Cleanup functions are useful if you have a long-running function that you want\nto unsubscribe from when the component is no longer on the page. Common examples\ninclude:</p>\n\n<ul>\n<li>a timer running via <code>setInterval</code></li>\n<li>a subscription to a web socket connection</li>\n</ul>\n\n<p>You don't always have to use a cleanup function as part of your <code>useEffect</code>code,\nbut it's good to know what scenarios make this functionality useful.</p>",
+          "weight": 0.0
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_6779",
-          "id": 6779,
-          "text": "I don't know.",
-          "html": "I don't know.",
-          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+          "id": 7120,
+          "text": "",
+          "html": "<p>I don't know.</p>",
+          "comments": "",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
+          "weight": 0.0
         }
       ],
       "variables": null,
@@ -517,52 +515,58 @@
       "id": 366298,
       "quiz_id": 53475,
       "quiz_group_id": null,
-      "assessment_question_id": null,
-      "position": 9,
+      "assessment_question_id": 632146,
+      "position": null,
       "question_name": "useEffect",
       "question_type": "multiple_answers_question",
-      "question_text": "Which of the following would be good use-cases for the <code>useEffect</code> hook?",
+      "question_text": "<p>Which of the following would be good use-cases for the <code>useEffect</code> hook?</p>",
       "points_possible": 1.0,
       "correct_comments": "",
       "incorrect_comments": "",
       "neutral_comments": "Source/s:The useEffect Hook",
-      "correct_comments_html": null,
-      "incorrect_comments_html": null,
+      "correct_comments_html": "",
+      "incorrect_comments_html": "",
       "neutral_comments_html": "<p><strong>Source/s:</strong></p><ul><li><a href=\"/courses/7553/pages/the-useeffect-hook\">The useEffect Hook</a></li></ul><p></p>",
       "answers": [
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_5888",
-          "id": 5888,
-          "text": "Fetch some data from an API when a component loads"
+          "id": 4092,
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "html": "<p>Fetch some data from an API when a component loads</p>"
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_3333",
-          "id": 3333,
-          "text": "Start or stop a timer based on changes to state"
+          "id": 2715,
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "html": "<p>Start or stop a timer based on changes to state</p>"
         },
         {
-          "weight": 100,
-          "migration_id": "RESPONSE_7275",
-          "id": 7275,
-          "text": "Subscribe to a chat service when a component loads"
+          "id": 1108,
+          "text": "",
+          "comments": "",
+          "comments_html": "",
+          "weight": 100.0,
+          "html": "<p>Subscribe to a chat service when a component loads</p>"
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_5727",
-          "id": 5727,
-          "text": "Handle a form being submitted",
-          "comments": "The useEffect hook isn't necessary here, since we can simply use the form'ssubmit event to run some code when the form is submitted.",
-          "comments_html": "The <code>useEffect</code> hook isn't necessary here, since we can simply use the\nform's<code>submit</code> event to run some code when the form is submitted."
+          "id": 3002,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>The <code>useEffect</code> hook isn't necessary here, since we can simply use the\nform's<code>submit</code> event to run some code when the form is submitted.</p>",
+          "weight": 0.0,
+          "html": "<p>Handle a form being submitted</p>"
         },
         {
-          "weight": 0,
-          "migration_id": "RESPONSE_958",
-          "id": 958,
-          "text": "I don't know.",
-          "html": "I don't know.",
-          "comments": "Be sure to study the source/s for this question. You'll get it next time."
+          "id": 4144,
+          "text": "",
+          "comments": "",
+          "comments_html": "<p>Be sure to study the source/s for this question. You'll get it next time.</p>",
+          "weight": 0.0,
+          "html": "<p>I don't know.</p>"
         }
       ],
       "variables": null,
